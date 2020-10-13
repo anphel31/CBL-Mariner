@@ -1755,6 +1755,16 @@
       "component": {
         "type": "other",
         "other": {
+          "name": "jsonbuilder",
+          "version": "0.2.1",
+          "downloadUrl": "https://github.com/microsoft/jsonbuilder/archive/v0.2.1.tar.gz"
+        }
+      }
+    },
+    {
+      "component": {
+        "type": "other",
+        "other": {
           "name": "kbd",
           "version": "2.0.4",
           "downloadUrl": "http://ftp.altlinux.org/pub/people/legion/kbd/kbd-2.0.4.tar.xz"
