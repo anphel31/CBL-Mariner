@@ -2,7 +2,7 @@
 
 Name:    uclibc
 Version: 0.9.33.2
-Release: 22%{?dist}
+Release: 23%{?dist}
 Summary: C library for embedded Linux
 
 License: LGPLv2
@@ -48,7 +48,7 @@ cp -a /usr/include/asm kernel-include
 cp -a /usr/include/asm-generic kernel-include
 cp -a /usr/include/linux kernel-include
 
-arch=`uname -m | sed -e 's/i.86/i386/' -e 's/ppc/powerpc/' -e 's/armv7l/arm/' -e 's/armv5tel/arm/'`
+arch=`uname -m | sed -e 's/aarch64/arm' -e 's/i.86/i386/' -e 's/ppc/powerpc/' -e 's/armv7l/arm/' -e 's/armv5tel/arm/'`
 echo "TARGET_$arch=y" >.config
 echo "TARGET_ARCH=\"$arch\"" >>.config
 %ifarch %{arm}
@@ -86,6 +86,9 @@ rm -rf  $RPM_BUILD_ROOT/include/
 %{_libdir}/uClibc
 
 %changelog
+* Mon Oct 26 2020 Andrew Phelps <anphel@microsoft.com> - 0.9.33.2-23
+- Fix for ARM64 build break.
+
 * Thu Oct 15 2020 Mateusz Malisz <mamalisz@microsoft.com> - 0.9.33.2-22
 - Initial CBL-Mariner import from Fedora 32 (license: MIT)
 
