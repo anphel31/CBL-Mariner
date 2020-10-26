@@ -48,7 +48,7 @@ cp -a /usr/include/asm kernel-include
 cp -a /usr/include/asm-generic kernel-include
 cp -a /usr/include/linux kernel-include
 
-arch=`uname -m | sed -e 's/aarch64/arm' -e 's/i.86/i386/' -e 's/ppc/powerpc/' -e 's/armv7l/arm/' -e 's/armv5tel/arm/'`
+arch=`uname -m | sed -e 's/aarch64/arm/' -e 's/i.86/i386/' -e 's/ppc/powerpc/' -e 's/armv7l/arm/' -e 's/armv5tel/arm/'`
 echo "TARGET_$arch=y" >.config
 echo "TARGET_ARCH=\"$arch\"" >>.config
 %ifarch %{arm}
