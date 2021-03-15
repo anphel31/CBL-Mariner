@@ -240,7 +240,7 @@ func installBuildRequires(defines map[string]string, runCheck bool) (err error) 
 	// Query the BuildRequires fields from this spec and turn them into an array of PackageVersions
 	const (
 		emptyQueryFormat        = ""
-		caCertificatesPackage   = "ca-certificates"
+		ptestBuildPackages      = "ca-certificates iana-etc which dejagnu autogen"
 		unresolvedOutputPrefix  = "No package"
 		unresolvedOutputPostfix = "available"
 		alreadyInstalledPostfix = "is already installed."
@@ -289,9 +289,9 @@ func installBuildRequires(defines map[string]string, runCheck bool) (err error) 
 		}
 
 		if runCheck {
-			logger.Log.Debug("Adding the 'ca-certificates' package - needed for package tests.")
+			logger.Log.Debugf("Adding additional packages for package tests: '%s'", ptestBuildPackages)
 
-			installArgs = append(installArgs, caCertificatesPackage)
+			installArgs = append(installArgs, ptestBuildPackages)
 		}
 
 		stdout, stderr, err = shell.Execute("tdnf", installArgs...)
