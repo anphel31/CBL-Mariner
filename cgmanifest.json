@@ -824,6 +824,16 @@
       "component": {
         "type": "other",
         "other": {
+          "name": "cups",
+          "version": "2.2.4",
+          "downloadUrl": "https://github.com/apple/cups/releases/download/v2.2.4/cups-2.2.4-source.tar.gz"
+        }
+      }
+    },
+    {
+      "component": {
+        "type": "other",
+        "other": {
           "name": "curl",
           "version": "7.74.0",
           "downloadUrl": "https://curl.haxx.se/download/curl-7.74.0.tar.gz"
@@ -1265,6 +1275,16 @@
         "type": "other",
         "other": {
           "name": "fontconfig",
+          "version": "2.12.4",
+          "downloadUrl": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.12.4.tar.bz2"
+        }
+      }
+    },
+    {
+      "component": {
+        "type": "other",
+        "other": {
+          "name": "fontconfig",
           "version": "2.13.91",
           "downloadUrl": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.13.91.tar.gz"
         }
@@ -1287,6 +1307,16 @@
           "name": "freefont",
           "version": "20120503",
           "downloadUrl": "https://ftp.gnu.org/pub/gnu/freefont/freefont-ttf-20120503.zip"
+        }
+      }
+    },
+    {
+      "component": {
+        "type": "other",
+        "other": {
+          "name": "freetype",
+          "version": "2.8",
+          "downloadUrl": "https://downloads.sourceforge.net/freetype/freetype-2.8.tar.bz2"
         }
       }
     },
@@ -3037,6 +3067,16 @@
           "name": "libwebp",
           "version": "1.0.0",
           "downloadUrl": "https://github.com/webmproject/libwebp/archive/v1.0.0.tar.gz"
+        }
+      }
+    },
+    {
+      "component": {
+        "type": "other",
+        "other": {
+          "name": "libxcb",
+          "version": "1.12",
+          "downloadUrl": "https://xcb.freedesktop.org/dist/libxcb-1.12.tar.bz2"
         }
       }
     },
@@ -7207,6 +7247,16 @@
           "name": "wpa_supplicant",
           "version": "2.9",
           "downloadUrl": "https://w1.fi/releases/wpa_supplicant-2.9.tar.gz"
+        }
+      }
+    },
+    {
+      "component": {
+        "type": "other",
+        "other": {
+          "name": "xcb-proto",
+          "version": "1.12",
+          "downloadUrl": "https://xcb.freedesktop.org/dist/xcb-proto-1.12.tar.bz2"
         }
       }
     },
